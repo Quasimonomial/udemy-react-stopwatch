@@ -1,34 +1,40 @@
 {
-  "name": "boilerplate",
+  "name": "test-timer",
   "version": "1.0.0",
-  "description": "Simple react app",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "author": "Andrew Mead",
+  "author": "Travis Herrick <quasimonomial@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "axios": "^0.9.1",
-    "express": "^4.13.4",
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7",
-    "react-router": "^2.0.0"
+  "scripts": {
+    "start": "node server.js",
+    "startdev": "webpack-dev-server --history-api-fallback --inline --progress",
+    "devserver": "nodemon --inspect server.js"
   },
   "devDependencies": {
-    "babel-core": "^6.5.1",
-    "babel-loader": "^6.2.2",
-    "babel-preset-es2015": "^6.5.0",
-    "babel-preset-react": "^6.5.0",
-    "babel-preset-stage-0": "^6.5.0",
-    "css-loader": "^0.23.1",
-    "foundation-sites": "6.2.0",
-    "jquery": "^2.2.1",
-    "node-sass": "^3.4.2",
-    "sass-loader": "^3.1.2",
-    "script-loader": "^0.6.1",
-    "style-loader": "^0.13.0",
-    "webpack": "^1.12.13"
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "foundation-sites": "^6.4.4-rc1",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.17.5",
+    "sass-loader": "^7.0.3",
+    "script-loader": "^0.7.2",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.0.2",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.3",
+    "query-string": "^6.1.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
   }
 }
