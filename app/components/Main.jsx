@@ -1,16 +1,13 @@
-var React = require('react');
+import React from 'react';
+import { Route, Switch } from 'react-router-dom'
 
 var Main = (props) => {
   return (
     <div>
-      <div>
-        <div>
-          <p>Main.jsx Rendered</p>
-          {props.children}
-        </div>
-      </div>
+      <Switch>
+      </Switch>
     </div>
   );
 }
 
-module.exports = Main;
+export default Main;

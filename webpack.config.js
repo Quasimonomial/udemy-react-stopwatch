@@ -17,21 +17,19 @@ module.exports = {
     })
   ],
   output: {
-    path: __dirname,
-    filename: './public/bundle.js'
+    filename: 'bundle.js'
   },
   devtool: 'eval-source-map',
   resolve: {
-    root: __dirname,
     alias: {
-      Main: 'app/components/Main.jsx',
-      applicationStyles: 'app/styles/app.scss'
+      Main: path.resolve(__dirname, 'app/components/Main.jsx'),
+      applicationStyles: path.resolve(__dirname, 'app/styles/app.scss')
     },
-    extensions: ['', '.js', '.jsx']
+    extensions: ['.js', '.jsx']
   },
   mode: 'development',
   module: {
-    loaders: [
+    rules: [
       {
         loader: 'babel-loader',
         query: {
@@ -41,7 +39,5 @@ module.exports = {
         exclude: /(node_modules|bower_components)/
       }
     ]
-  },
+  }
 };
-
-var webpack = require('webpack');
