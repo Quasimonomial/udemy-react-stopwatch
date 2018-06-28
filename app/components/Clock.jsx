@@ -1,6 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 class Clock extends React.Component {
+  static defaultProps = {
+    totalSeconds: 0
+  }
+
+  static propTypes = {
+    totalSeconds: PropTypes.number.isRequired
+  }
+
   formatSeconds(totalSeconds) {
     var sec = totalSeconds % 60
     var min = Math.floor(totalSeconds / 60)
@@ -17,9 +27,12 @@ class Clock extends React.Component {
   }
 
   render() {
+    var { totalSeconds } = this.props;
     return (
-      <div className="">
-        Rendered Clock
+      <div className="clock-container">
+        <span className="clock-text">
+          {this.formatSeconds(totalSeconds)}
+        </span>
       </div>
     );
   }

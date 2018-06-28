@@ -19,4 +19,16 @@ describe('Clock', () => {
       expect(clock.formatSeconds(61)).toEqual('01:01')
     })
   })
+
+  describe('render', () => {
+    it('should render clock to output', () => {
+      var clock = ReactTestUtils.renderIntoDocument(<Clock totalSeconds={62}/>);
+      var $el = $(ReactDOM.findDOMNode(clock));
+      console.log("AAAA")
+      console.log($el)
+      var text = $el.find('.clock-text').text();
+
+      expect(text).toBe('01:02')
+    })
+  })
 });
