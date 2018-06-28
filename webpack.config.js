@@ -22,8 +22,10 @@ module.exports = {
   devtool: 'eval-source-map',
   resolve: {
     alias: {
+      Countdown: path.resolve(__dirname, 'app/components/Countdown.jsx'),
       Main: path.resolve(__dirname, 'app/components/Main.jsx'),
       Nav: path.resolve(__dirname, 'app/components/Nav.jsx'),
+      Timer: path.resolve(__dirname, 'app/components/Timer.jsx'),
       applicationStyles: path.resolve(__dirname, 'app/styles/app.scss')
     },
     extensions: ['.js', '.jsx']

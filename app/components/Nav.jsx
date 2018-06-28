@@ -9,10 +9,10 @@ class Nav extends React.Component {
           <ul className="menu">
             <li className="menu-text">React Tested Stopwatch</li>
             <li>
-              <NavLink to="/" activeClassName='active-link' exact>Timer</NavLink>
+              <NavLink to="/countdown" activeClassName='active-link' exact>Timer</NavLink>
             </li>
             <li>
-              <NavLink to="/" activeClassName='active-link' exact>Countdown</NavLink>
+              <NavLink to="/timer" activeClassName='active-link' exact>Countdown</NavLink>
             </li>
           </ul>
         </div>
