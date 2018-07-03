@@ -24,6 +24,7 @@ module.exports = {
     alias: {
       Clock: path.resolve(__dirname, 'app/components/Clock.jsx'),
       Countdown: path.resolve(__dirname, 'app/components/Countdown.jsx'),
+      CountdownForm: path.resolve(__dirname, 'app/components/CountdownForm.jsx'),
       Main: path.resolve(__dirname, 'app/components/Main.jsx'),
       Nav: path.resolve(__dirname, 'app/components/Nav.jsx'),
       Timer: path.resolve(__dirname, 'app/components/Timer.jsx'),
